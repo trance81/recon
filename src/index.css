@@ -8,6 +8,7 @@
 @layer base {
   body {
     @apply bg-white text-slate-900 antialiased;
+    -webkit-tap-highlight-color: transparent;
   }
 }
 
@@ -17,4 +18,8 @@
 
 .text-gradient {
   @apply bg-clip-text text-transparent bg-gradient-to-br from-slate-900 via-slate-800 to-slate-600;
+}
+
+.safe-area-bottom {
+  padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
 }
