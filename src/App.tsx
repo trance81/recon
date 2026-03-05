@@ -435,10 +435,7 @@ const Footer = () => (
     <div className="max-w-7xl mx-auto px-6">
       <div className="grid md:grid-cols-4 gap-12 mb-20">
         <div className="col-span-2">
-          <div className="flex items-center gap-2 mb-6">
-            <div className="w-8 h-8 bg-slate-900 flex items-center justify-center rounded-lg">
-              <Building2 className="text-white w-5 h-5" />
-            </div>
+          <div className="flex items-center gap-2 mb-6">            
             <div className="flex items-center gap-2">
               <img 
                 src={logoUrl}
@@ -449,8 +446,7 @@ const Footer = () => (
             </div>
           </div>
           <p className="text-slate-500 max-w-sm">
-            우리는 더 나은 주거 문화를 선도하며, 
-            입주민의 가치 실현을 최우선으로 생각합니다.
+          동의서가 시작입니다!
           </p>
         </div>                
       </div>
