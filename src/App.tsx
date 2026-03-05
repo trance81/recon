@@ -14,6 +14,8 @@ import {
   CheckCircle2
 } from 'lucide-react';
 
+const logoUrl = new URL('/ReCon_logo.png', import.meta.url).href;
+
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -29,7 +31,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <div className="flex items-center gap-2">
           <img 
-            src="/ReCon_logo.png" 
+            src={logoUrl}
             alt="ReCon 로고" 
             className="w-25 h-25 object-contain"
           />
@@ -438,13 +440,13 @@ const Footer = () => (
               <Building2 className="text-white w-5 h-5" />
             </div>
             <div className="flex items-center gap-2">
-          <img 
-            src="/ReCon_logo.png" 
-            alt="ReCon 로고" 
-            className="w-25 h-25 object-contain"
-          />
-          <span className="text-xl font-bold tracking-tighter uppercase text-slate-900">B1블록 재건축 동의서 안내</span>
-        </div>
+              <img 
+                src={logoUrl}
+                alt="ReCon 로고" 
+                className="w-25 h-25 object-contain"
+              />
+              <span className="text-xl font-bold tracking-tighter uppercase text-slate-900">B1블록 재건축 동의서 안내</span>
+            </div>
           </div>
           <p className="text-slate-500 max-w-sm">
             우리는 더 나은 주거 문화를 선도하며, 
